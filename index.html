@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+    <meta name="description" content="Portfolio de Santiago Sordi - Desarrollador Backend especializado en Java, Spring Boot y bases de datos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Santiago Sordi - Desarrollador de Software</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú"  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="header-info">
+                    <h1>Santiago Sordi</h1>
+                    <h2>Desarrollador de Software</h2>
+                    <p class="header-description">Desarrollador de software con sólida base en arquitecturas empresariales y desarrollo backend.</p>
+                </div>
+            </header>
+            <!-- Navegación -->
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Educación</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social links al final -->
+            <div class="social-links">
+                <a href="https://github.com/sordi005" target="_blank" rel="noopener noreferrer">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/santiago-sordi-gil-9a7525327/" target="_blank" rel="noopener noreferrer">
+                    <iconify-icon icon="mdi:linkedin"></iconify-icon>
+                </a>
+                <a href="mailto:santiago.sordi@example.com">
+                    <iconify-icon icon="mdi:gmail"></iconify-icon>
+                </a>
+            </div>
+        </aside>
+
+        <main class="content">
+        <!-- about -->
+        <section class="about" id="about">
+            <h2>Sobre Mí</h2>
+            <p>
+                Estudiante de Tecnicatura en Programación en la UTN, enfocado en desarrollo 
+                backend con Java y Spring Boot. Experiencia creando APIs REST con autenticación 
+                JWT, aplicaciones de escritorio con Python y arquitecturas por capas.
+            </p>
+            <p>
+                Me apasiona la programación, resolver desafíos técnicos y aplicar buenas 
+                prácticas en cada proyecto. Busco constantemente aprender nuevas tecnologías 
+                y mejorar mis habilidades como desarrollador.
+            </p>
+            
+        </section>
+        
+        <!-- projects -->
+        <section class="projects" id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-container">
+
+                <article class="project-card">
+                    <h3>User Management Api</h3>
+                    <p>API REST para la gestión de usuarios, incluyendo autenticación y autorización, desarrollada con Java, Spring Boot y JWT.</p>
+                    <!-- Link a GitHub en esquina inferior derecha -->
+                    <a href="https://github.com/sordi005/user-management-api" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <iconify-icon icon="mdi:github" role="img" aria-label="Ver en GitHub"></iconify-icon>
+                    </a>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <iconify-icon icon="logos:java" role="img" aria-label="Java"></iconify-icon>
+                            <span class="tooltip" role="tooltip">
+                                Java - Backend development
+                            </span>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <iconify-icon icon="simple-icons:springboot" role="img" aria-label="Spring Boot"></iconify-icon>
+                            <span class="tooltip" role="tooltip">
+                                Spring Boot - Microservicios
+                            </span>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <iconify-icon icon="logos:jwt" role="img" aria-label="JWT"></iconify-icon>
+                            <span class="tooltip" role="tooltip">
+                                JWT - Autenticación
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Remote Work Planer</h3>
+                    <p>Desktop app con arquitectura por capas (UI/Servicios/Data), SQLite,logging con rotación y packaging (PyInstaller onedir + instalador Inno Setup).</p>
+                    <!-- Link a GitHub en esquina inferior derecha -->
+                    <a href="https://github.com/sordi005/remote-work-planner" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <iconify-icon icon="mdi:github" role="img" aria-label="Ver en GitHub"></iconify-icon>
+                    </a>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <iconify-icon icon="material-icon-theme:python" role="img" aria-label="Python"></iconify-icon>
+                            <span class="tooltip" role="tooltip">
+                                Python - Desarrollo Desktop.
+                            </span>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <iconify-icon icon="devicon:qt" role="img" aria-label="PyQt6"></iconify-icon>
+                            <span class="tooltip" role="tooltip">
+                                PyQt6 - Library UI
+                            </span>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <iconify-icon icon="vscode-icons:file-type-innosetup" role="img" aria-label="Inno Setup"></iconify-icon>
+                            <span class="tooltip" role="tooltip">
+                                Inno Setup - Instalador
+                            </span>
+                        </div>
+                    </div>
+                    
+                </article>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            
+            <article class="skills-category" id="skill-category-backend">
+                <h3>Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="java">
+                        <iconify-icon icon="lineicons:java" role="img" aria-label="Java"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="springboot">
+                        <iconify-icon icon="simple-icons:springboot" role="img" aria-label="Spring Boot"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="typescript">
+                        <iconify-icon icon="bxl:typescript" role="img" aria-label="TypeScript"></iconify-icon>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skills-category" id="skill-category-frontend">
+                <h3>Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="html">
+                        <iconify-icon icon="flowbite:html-solid" role="img" aria-label="HTML5"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="css">
+                        <iconify-icon icon="akar-icons:css-fill" role="img" aria-label="CSS3"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="javascript">
+                        <iconify-icon icon="ri:javascript-fill" role="img" aria-label="JavaScript"></iconify-icon>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skills-category" id="skill-category-database">
+                <h3>Base de Datos</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="mysql">
+                        <iconify-icon icon="cib:mysql" role="img" aria-label="MySQL"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="sqlite">
+                        <iconify-icon icon="file-icons:sqlite" role="img" aria-label="SQLite"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="postgresql">
+                        <iconify-icon icon="akar-icons:postgresql-fill" role="img" aria-label="PostgreSQL"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="mongodb">
+                        <iconify-icon icon="devicon-plain:mongodb-wordmark" role="img" aria-label="MongoDB"></iconify-icon>
+                    </div>
+                </div>
+            </article>
+
+            <article class="skills-category" id="skill-category-tools">
+                <h3>Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="git">
+                        <iconify-icon icon="mdi:git" role="img" aria-label="Git"></iconify-icon>
+                    </div>
+                    <div class="skill-item" data-skill="docker">
+                        <iconify-icon icon="mdi:docker" role="img" aria-label="Docker"></iconify-icon>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    <!-- education -->
+        <section class="education" id="education">
+            <h2>Educación</h2>
+            <article class="education-item">
+                <h3>Tecnicatura en Programación</h3>
+                <p class="institution">Universidad Tecnológica Nacional - UTN</p>
+                <p class="period">2024 - actualidad</p>
+            </article>
+
+        </section>
+        
+    <!-- contact -->
+        <section class="contact" id="contact">
+            <h2>Contacto</h2>
+            <p>Contáctame para colaborar en proyectos</p>
+            <form action="https://formspree.io/f/xkgpqaoy" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Santiago Sordi. Todos los derechos reservados.</p>
+        </footer>
+        </main>
+    </div>
+
+    <!-- Modal para Skills -->
+    <div class="modal" id="skillModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <iconify-icon id="modalIcon" icon="mdi:code"></iconify-icon>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/skillsData.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
