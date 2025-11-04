@@ -65,6 +65,7 @@ function initModal() {
         }
     });
 }
+
 // formulario de contacto
 function initContactForm() {
     const form = document.querySelector('.contact form');
@@ -120,9 +121,7 @@ function showAlert(message, type) {
     }, 4000);
 }
 
-// ------------------------------------------
-// 4. NAVEGACIÓN ACTIVA AL HACER SCROLL
-// ------------------------------------------
+
 function initActiveNav() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.main-nav a');
@@ -131,8 +130,7 @@ function initActiveNav() {
         // Detectar si es desktop o móvil
         const isDesktop = window.innerWidth >= 1024;
         
-        // En desktop, el scroll está en .content
-        // En móvil, el scroll está en window
+        
         const scrollContainer = isDesktop ? document.querySelector('.content') : window;
         const scrollY = isDesktop ? scrollContainer.scrollTop : window.scrollY;
 
@@ -141,12 +139,10 @@ function initActiveNav() {
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute('id');
 
-            // Si el scroll está en esta sección
             if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                // Remover 'active' de todos
+
                 navLinks.forEach(link => link.classList.remove('active'));
 
-                // Agregar 'active' al link correspondiente
                 const activeLink = document.querySelector(`.main-nav a[href="#${sectionId}"]`);
                 if (activeLink) {
                     activeLink.classList.add('active');
@@ -164,7 +160,6 @@ function initActiveNav() {
     
     window.addEventListener('scroll', updateActiveNav);
     
-    // Ejecutar al cargar
     updateActiveNav();
 }
 

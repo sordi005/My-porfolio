@@ -163,6 +163,7 @@ header {
 /* Links */
 .social-links {
     display: flex;
+    padding-left: var(--spacing-md);
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-xl);
 }
@@ -179,13 +180,6 @@ header {
     transform: translateY(-3px);
 }
 
-/* Social links en desktop: al final */
-@media (min-width: 1024px) {
-    .social-links {
-        margin-top: var(--spacing-lg);
-        margin-bottom: 0;
-    }
-}
 
 /* Navegación - OCULTA por defecto en móvil */
 .main-nav {
@@ -234,7 +228,7 @@ main {
 }
 
 .about {
-    margin-bottom: 4rem; 
+    margin-bottom: 5rem; 
 }
 
 .about p {
@@ -256,7 +250,7 @@ main {
 }
 
 .projects p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: var(--spacing-xl);
 }
 
@@ -301,7 +295,7 @@ main {
 }
 
 .tech-item iconify-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .tech-item span {
@@ -309,10 +303,6 @@ main {
     color: var(--text-secondary);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
 
 .github-link {
     position: absolute;
@@ -661,8 +651,6 @@ footer {
 
 /* DESKTOP: Dos columnas */
 @media (min-width: 1024px) {
-
-    
     /* contenedor principal */
 
     .container {
@@ -699,6 +687,11 @@ footer {
 
     .menu-toggle {
         display: none;
+    }
+    
+    .social-links {
+        margin-top: var(--spacing-lg);
+        margin-bottom: 0;
     }
 
     .main-nav {
@@ -741,9 +734,6 @@ footer {
         -ms-overflow-style: none; 
     }
 
-    .content::-webkit-scrollbar {
-        display: none; 
-    }
 
     .header-info h1 {
         font-size: 3rem;
@@ -800,7 +790,7 @@ footer {
     }
 
     .tech-item iconify-icon {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .tech-item span {
