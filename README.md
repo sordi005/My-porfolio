@@ -2,12 +2,6 @@
 
 Portfolio web desarrollado como proyecto final universitario para demostrar dominio de fundamentos frontend y buenas prácticas de desarrollo web.
 
-## 🌐 Demo en Vivo
-
-🔗 [Ver Portfolio](https://sordi005.github.io/portfolio)
-
----
-
 ## 📋 Descripción
 
 Portfolio personal interactivo y responsive que presenta mi experiencia como desarrollador de software, proyectos destacados y habilidades técnicas. Desarrollado desde cero con HTML5, CSS3 y JavaScript vanilla, aplicando conceptos modernos de diseño web y arquitectura frontend.
